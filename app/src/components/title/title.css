@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
+
+
+body {
+    font-family: 'Gamja Flower',cursive;  
+}
+
+.Title {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 15em;
+    background-color: #9ff9cf8c;
+}
+
+h1 {
+    font-size:4em;
+}
