@@ -1,0 +1,32 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 25vh;
+    background-color: #FFD7A38C;
+
+}
+
+button,
+input {
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+input {
+    height: 30px;
+}
+
+input[type=text]:focus {
+    border: 3px solid #9FF9D0;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 3px;
+}
