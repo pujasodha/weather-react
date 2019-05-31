@@ -22,7 +22,7 @@ class App extends Component {
         const country = e.target.elements.country.value;
 
         const response = await fetch(
-            `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${
+            `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${
                 process.env.REACT_APP_WEATHER_API_KEY
             }&units=imperial`
         );
