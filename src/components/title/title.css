@@ -2,17 +2,16 @@
 
 
 body {
-    font-family: 'Gamja Flower',cursive;  
+    font-family: 'Gamja Flower', cursive;
 }
 
 .Title {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 15em;
-    background-color: #9ff9cf8c;
 }
 
 h1 {
-    font-size:4em;
+    font-size: 4em;
 }

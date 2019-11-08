@@ -1,6 +1,15 @@
 .weather-display {
         display: flex;
-        justify-content: center;
-        height: 100vh;
-        background-color: #FFD7A38C;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5em;
+}
+
+.weather {
+        font-size: 1.5em;
+        color: white;
+        background-color: #3e528d;
+        border-radius: 1em;
+        width: 40%;
+        text-align: center;
 }

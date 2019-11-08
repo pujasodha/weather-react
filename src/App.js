@@ -9,6 +9,8 @@ class App extends Component {
         temperature: undefined,
         city: undefined,
         country: undefined,
+        humidity: undefined,
+        wind: undefined,
         description: undefined,
         error: undefined,
     };
@@ -27,13 +29,15 @@ class App extends Component {
             }&units=imperial`
         );
 
-        const { cod, main, name, sys, weather } = await response.json();
+        const { cod, main, name, sys, weather, wind } = await response.json();
 
         if (city && country && cod === 200) {
             this.setState({
                 temperature: main.temp,
                 city: name,
                 country: sys.country,
+                humidity: main.humidity,
+                wind: wind.speed,
                 description: weather[0].description,
                 error: '',
             });
@@ -42,6 +46,8 @@ class App extends Component {
                 temperature: undefined,
                 city: undefined,
                 country: undefined,
+                humidity: undefined,
+                wind: undefined,
                 description: undefined,
                 error:
                     city || country
@@ -55,8 +61,8 @@ class App extends Component {
         return (
             <div className="App">
                 <Title />
-                <Form onSubmit={this.getWeather} />
                 <Weather {...this.state} />
+                <Form onSubmit={this.getWeather} />
             </div>
         );
     }
