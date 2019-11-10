@@ -6,10 +6,18 @@
 }
 
 .weather {
-        font-size: 1.5em;
+        /* font-size: 1.5em; */
         color: white;
         background-color: #3e528d;
         border-radius: 1em;
-        width: 40%;
+        width: 95%;
         text-align: center;
+}
+
+@media only screen and (min-width: 1000px) {
+        .weather {
+                width: 40%;
+                /* background-color: #3e528d; */
+        }
+
 }
